@@ -106,6 +106,34 @@ Board description, if available
   ...
 ```
 
+## Publishing to PyPI
+
+If you want to publish this package to PyPI:
+
+1. Update the version in `pyproject.toml` and `trello_loader/__init__.py`
+2. Install the required build tools:
+   ```bash
+   uv pip install build twine
+   ```
+3. Build the package:
+   ```bash
+   uv run -m build
+   ```
+4. Upload to PyPI:
+   ```bash
+   uv run -m twine upload dist/*
+   ```
+
+You'll need PyPI credentials to publish the package.
+
+## Installation from PyPI
+
+Once published, the package can be installed with:
+
+```bash
+uv pip install trello-loader
+```
+
 ## License
 
 MIT
