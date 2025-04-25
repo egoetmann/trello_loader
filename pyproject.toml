@@ -25,8 +25,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/trello_loader"
-"Bug Tracker" = "https://github.com/yourusername/trello_loader/issues"
+"Homepage" = "https://github.com/egoetmann/trello_loader"
+"Bug Tracker" = "https://github.com/egoetmann/trello_loader/issues"
 
 [project.scripts]
 trello-to-md = "trello_loader.trello_to_markdown:main"
